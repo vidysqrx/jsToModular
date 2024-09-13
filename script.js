@@ -19,10 +19,6 @@ async function convertToEsm(src, dest) {
     const srcFile = path.join(src, file);
     const destFile = path.join(dest, file);
 
-    // Copy the original JavaScript file to a new folder
-    const destinationPath = path.join("OUTPUT_HERE/js", file);
-    await fs.promises.copyFile(srcFile, destinationPath);
-
     if (fs.lstatSync(srcFile).isDirectory()) {
       // Recursively process directories
       if (!fs.existsSync(destFile)) {
