@@ -1,0 +1,16 @@
+{
+  "name": "jstomodular",
+  "version": "1.0.0",
+  "description": "This repository contain command line to convert plain js to .cjs and .mjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cjstoesm": "^2.1.2",
+    "to-esm": "^2.27.3"
+  }
+}
